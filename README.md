@@ -1,2 +1,11 @@
 # DCGANetwork
 Deep Convolution Generative Adversarial Network implemented in C++ using Pytorch C++ API
+
+# Setting up PyTorch C++ API for VS
+1. Download pre-built libtorch from ‘ https://pytorch.org/ ’ (gpu[cuda] or cpu[none])
+2. Extract the downloaded zip file.
+3. In Visual Studio project property, Configuration must be either release or debug. Platform must be x64 (pre-built files are in x64.)
+4. In VC++ Directories and ‘C/C++ →Additional Include Directories’, add \path\to\libtorch\include and \path\to\libtorch\csrc\api\include .
+5. In Linker → Additional Library Directories, add \path\to\libtorch\lib .
+6. In Linker → Input, add torch.lib; caffe2_module_test_dynamic.lib; c10.lib
+7. Run the project in x64 config
