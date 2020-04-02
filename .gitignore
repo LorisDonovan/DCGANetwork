@@ -1,0 +1,14 @@
+*.pt
+*.png
+  
+# Binaries
+**/bin/
+**/bin-int/
+
+# Project files
+*.log
+
+# Visual Studio files and folder
+.vs/
+**.vcxproj.filters
+**.vcxproj.user
