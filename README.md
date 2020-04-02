@@ -9,3 +9,4 @@ Deep Convolution Generative Adversarial Network implemented in C++ using Pytorch
 5. In Linker → Additional Library Directories, add \path\to\libtorch\lib .
 6. In Linker → Input, add torch.lib; caffe2_module_test_dynamic.lib; c10.lib
 7. Run the project in x64 config
+8. You will also have to copy .dll files from \path\to\libtorch\lib to bin\Debug-x64\DCGANetwork
